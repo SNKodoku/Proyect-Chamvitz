@@ -1,0 +1,72 @@
+[
+  {
+    "id": "2",
+    "nombre": "jonathan",
+    "email": "jonathan@example.com",
+    "password": "$2a$10$N9qo8uLOickgx2ZMRZoMy.MrYV7ZRbjY6Z7JYV7JYV7JYV7JYV7JY",
+    "rol": "usuario",
+    "createdAt": "2023-11-15T12:00:00.000Z",
+    "updatedAt": "2023-11-15T12:00:00.000Z",
+    "cart": []
+  },
+  {
+    "id": "3",
+    "name": "Juan",
+    "email": "juanito@hotmail.com",
+    "password": "$2b$10$0K3AnPBozQifXiTiq/JL2e3pDYEQPn95YTKrFuyBfCt8FK7eeuxg.",
+    "rol": "admin",
+    "createdAt": "2023-11-15T12:00:00.000Z",
+    "updatedAt": "2023-11-15T12:00:00.000Z",
+    "cart": []
+  },
+  {
+    "id": "1746699141728",
+    "nombre": "Jonathan Córdoba",
+    "email": "jonathanvcc@gmail.com",
+    "password": "$2b$10$nwdv59PowfL64Me5K2xyY.T8Cm1/ZcxYYLaBtqp9CLUMTWJSuO4/G",
+    "rol": "usuario",
+    "createdAt": "2023-11-15T12:00:00.000Z",
+    "updatedAt": "2025-05-25T16:20:56.539Z",
+    "cart": []
+  },
+  {
+    "id": "1746699396526",
+    "nombre": "Juan Pablo",
+    "email": "juan@hotmail.com",
+    "password": "$2b$10$.Y4sx1lsgjopdTk22s4q7./itSi2nFGbJRxsuzCMRh7ZrbwxSsKIO",
+    "rol": "usuario",
+    "createdAt": "2023-11-15T12:00:00.000Z",
+    "updatedAt": "2023-11-15T12:00:00.000Z",
+    "cart": []
+  },
+  {
+    "id": "1747184900763",
+    "nombre": "Pedro Lopez",
+    "email": "pedro@hotmail.com",
+    "password": "$2b$10$sOfNNDIDQV7dQmR.HqyOd.VEGJSj2mqz9IGZ0Cbanc6vHSxTRXLUG",
+    "rol": "usuario",
+    "createdAt": "2023-11-15T12:00:00.000Z",
+    "updatedAt": "2023-11-15T12:00:00.000Z",
+    "cart": []
+  },
+  {
+    "id": "1747710396184",
+    "nombre": "Leticia Gomez",
+    "email": "lety@ejemplo.com",
+    "password": "$2b$10$Gjbgq3HbU8weEgAEL.UvP.3tLl.byLq7TFEE1o.HSwOFiIlIDhkCS",
+    "rol": "admin",
+    "createdAt": "2023-11-15T12:00:00.000Z",
+    "updatedAt": "2023-11-15T12:00:00.000Z",
+    "cart": []
+  },
+  {
+    "id": "1747710917459",
+    "nombre": "Admin",
+    "email": "admin@example.com",
+    "password": "$2b$10$Csr.A4oG45n95y6VEvyKN.u4Yse5EsZpEsvWY0A66hBibcBGAa1ly",
+    "rol": "admin",
+    "createdAt": "2023-11-15T12:00:00.000Z",
+    "updatedAt": "2023-11-15T12:00:00.000Z",
+    "cart": []
+  }
+]

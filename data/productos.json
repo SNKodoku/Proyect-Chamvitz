@@ -1,0 +1,41 @@
+[
+  {
+    "id": "1",
+    "nombre": "Laptop HP",
+    "descripcion": "Laptop HP con procesador Intel Core i5, 8GB RAM, 256GB SSD",
+    "precio": 899.99,
+    "categoria": "Electrónicos",
+    "imagen": "/img/laptop.jpg",
+    "stock": 12,
+    "updatedAt": "2025-05-19T21:30:40.588Z"
+  },
+  {
+    "id": "2",
+    "nombre": "Smartphone Samsung",
+    "descripcion": "Smartphone Samsung Galaxy S21 con 128GB de almacenamiento",
+    "precio": 799.99,
+    "categoria": "Electrónicos",
+    "imagen": "/img/smartphone.webp",
+    "stock": 15
+  },
+  {
+    "id": "3",
+    "nombre": "Zapatos Deportivos",
+    "descripcion": "Zapatos deportivos para correr, tallas disponibles del 38 al 45",
+    "precio": 59.99,
+    "categoria": "Ropa",
+    "imagen": "/img/tenis.webp",
+    "stock": 30,
+    "updatedAt": "2025-05-20T08:56:10.532Z"
+  },
+  {
+    "id": "4",
+    "nombre": "Lavadora",
+    "descripcion": "Lavadora automática Mabe LMX79114WDAB0 19 kg",
+    "precio": 1200.99,
+    "categoria": "Linea Blanca",
+    "imagen": "/uploads/1747694783563.jpeg",
+    "stock": 0,
+    "updatedAt": "2025-05-19T22:46:23.567Z"
+  }
+]

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto - Chamvitz</title>
+  <link rel="stylesheet" href="/public/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header class="header-flex">
+    <img src="/public/images/logo_cham.jpg" alt="Chamvitz Logo" class="logo">
+    <h1>Contáctanos</h1>
+    <nav class="navbar">
+      <div class="menu-icon" id="menu-icon" role="button" aria-label="Menú de navegación">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="profesionales.html">Profesionales</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li id="link-registrar"><a href="/registrar.html">Registrar</a></li>
+      <li id="link-login"><a href="/login.html">Iniciar Sesión</a></li>
+      <li id="link-admin" style="display: none"><a href="/admin.html">Admin</a></li>
+      <li id="link-logout" style="display: none"><a>Cerrar Sesión</a></li>  
+      <li id="saludo-usuario" style="display: none"><span></span></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contacto">
+      <h2>¿Tienes preguntas o quieres más información?</h2>
+      <p>Completa el siguiente formulario y te responderemos lo antes posible:</p>
+
+      <form action="#" method="post" id="form-contacto">
+        <div class="input-grupo">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="input-grupo">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="input-grupo">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Pie de página -->
+    <p>&copy; 2025 Chamvitz. Todos los derechos reservados.</p>
+    <p>&copy; Numero de telefono de la compañia: 5547810502</p>
+    <p>&copy; Correo electronico de la compañia: 420098597@pcpuma.acatlan.uanm.mx</p>
+    <!-- Mensaje de copyright con el año 2025 -->
+  </footer>
+
+  <script src="/public/js/script.js"></script>
+</body>
+</html>

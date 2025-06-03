@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo" src="/images/logo.jpg" alt="Logo de la FES" title="FES Acatlán">
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-list" id="nav-list">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+            <li><a href="/productos.html">Productos</a></li>
+            <li id="link-cart" style="display: none"><a href="/carrito.html">Carrito</a></li>
+            <li id="link-login"><a href="/login.html">Iniciar Sesión</a></li>
+            <li id="link-registrar"><a href="/registrar.html">Registrar</a></li>
+            <li id="link-admin" style="display: none"><a href="/admin.html">Admin</a></li>
+            <li id="link-logout" style="display: none"><a>Cerrar Sesión</a></li>  
+            <li id="saludo-usuario" style="display: none"><span></span></li>    
+        </ul>
+    </nav>
+    <header class="header">
+        <h1>Tienda Virtual - Mi Acatlán</h1>
+    </header>
+    <main class="principal-admin">
+        <section class="panel-admin">
+            <h2>Administración de Productos</h2>
+
+            <div class="acciones-admin">
+                <button id="add-producto-btn" class="btn">Agregar Producto</button>
+            </div>
+
+            <!-- Formulario para añadir productos a la tienda -->
+            <div class="contenedor-formulario" id="contenedor-formulario-producto" style="display: none;">
+                <form id="formulario-producto" class="formulario-auth">
+                    <input type="hidden" id="id-producto">
+                    <div class="formulario-grupo">
+                        <label for="nombre-producto">Nombre:</label>
+                        <input type="text" id="nombre-producto" required>
+                    </div>
+                    <div class="formulario-grupo">
+                        <label for="descripcion-producto">Descripción:</label>
+                        <textarea id="descripcion-producto" required></textarea>
+                    </div>
+                    <div class="formulario-grupo">
+                        <label for="precio-producto">Precio:</label>
+                        <input type="number" id="precio-producto" step="0.01" required>
+                    </div>
+                    <div class="formulario-grupo">
+                        <label for="categoria-producto">Categoría:</label>
+                        <input type="text" id="categoria-producto" required>
+                    </div>
+                    <div class="formulario-grupo">
+                        <label for="stock-producto">Stock:</label>
+                        <input type="number" id="stock-producto" required>
+                    </div>
+                    <div class="formulario-grupo">
+                        <label for="imagen-producto">Imagen:</label>
+                        <input type="file" id="imagen-producto" name="imagen" accept="image/*">
+                    </div>
+                    <div class="formulario-botones">
+                        <button type="submit" class="btn">Guardar</button>
+                        <button type="button" id="btn-cancelar-producto" class="btn btn-secundario">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Mostrar listado de producto -->
+            <div class="lista-admin-productos">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Categoría</th>
+                            <th>Stock</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-admin-producto">
+                        <!-- Los productos se cargarán dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 - Galería FES Acatlán</p>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/admin.js"></script>
+    <script type="module" src="/js/autentificacion.js"></script>
+</body>
+</html>

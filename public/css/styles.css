@@ -1,0 +1,357 @@
+/* Fuente principal */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white; /* Fondo claro en toda la página */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  background-color: #333;
+  color: white;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+}
+
+.header-flex .logo {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.header-flex h1 {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+nav.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+.menu-icon {
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Oculta el menú en pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 10;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
+
+/* SECCIÓN DE BÚSQUEDA */
+#busqueda {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#busqueda h2 {
+  margin-bottom: 1rem;
+  color: #4caf50;
+}
+
+#busqueda form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#busqueda select,
+#busqueda input[type="text"] {
+  flex: 1 1 200px;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#busqueda button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#busqueda button:hover {
+  background-color: #218838;
+}
+
+/* SECCIÓN DESTACADOS */
+#destacados {
+  padding: 2rem;
+}
+
+#destacados h2 {
+  margin-bottom: 1rem;
+  color: #4caf50;
+}
+
+.profesionales-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profesional-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 200px;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.profesional-card:hover {
+  transform: translateY(-5px);
+}
+
+.profesional-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.profesional-card h3 {
+  margin: 0.5rem 0;
+  color: #2c3e50;
+}
+
+.profesional-card p {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  #busqueda form {
+    flex-direction: column;
+  }
+
+  .profesionales-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ESTILOS PARA EL FORMULARIO DE REGISTRO */
+#registro {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+#registro h2 {
+  margin-bottom: 1rem;
+  color: #4caf50;
+  text-align: center;
+}
+
+#form-registro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#form-registro input[type="text"],
+#form-registro input[type="url"],
+#form-registro select,
+#form-registro textarea {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#form-registro textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+#form-registro button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+#form-registro button:hover {
+  background-color: #45a049;
+}
+
+#form-registro input:focus,
+#form-registro textarea:focus,
+#form-registro select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  #registro {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* FORMULARIO DE CONTACTO */
+#contacto {
+  padding: 2rem;
+  text-align: center;
+}
+
+#contacto h2 {
+  margin-bottom: 1rem;
+  color: #4caf50;
+}
+
+#contacto p {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+#form-contacto {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#form-contacto .input-grupo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#form-contacto label {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+#form-contacto input[type="text"],
+#form-contacto input[type="email"],
+#form-contacto textarea {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#form-contacto input:focus,
+#form-contacto textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+#form-contacto button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+#form-contacto button:hover {
+  background-color: #45a049;
+}
+
+/* RESPONSIVO PARA FORMULARIO */
+@media (max-width: 768px) {
+  #form-contacto {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- Define el tipo de documento como HTML5 -->
+<html lang="es">
+<!-- La etiqueta <html> contiene el atributo "lang" que indica el idioma principal: español -->
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Configura la codificación de caracteres a UTF-8, estándar para texto en español y muchos otros idiomas -->
+
+  <title>Chamvitz - Encuentra Profesionales</title>
+  <!-- El título de la pestaña o ventana del navegador -->
+
+  <link rel="stylesheet" href="/public/css/styles.css">
+  <!-- Vincula la hoja de estilos externa que contiene el CSS de la página -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+
+  <!--<body> Todo el contenido visible de la página está dentro del <body> -->
+<body>
+  <header>
+    <img src="/public/images/logo_cham.jpg" alt="Chamvitz Logo" class="logo">
+    <h1>Encuentra al mejor profesional cerca de ti</h1>
+
+    <nav class="navbar">
+      <div class="menu-icon" id="menu-icon" role="button" aria-label="Menú de navegación">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="profesionales.html">Profesionales</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="registrar.html">Regístrate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="busqueda">
+      <h2>Busca el servicio que necesitas</h2>
+      <form id="search-form">
+        <select name="oficio" required>
+          <option value="">Seleccione un oficio</option>
+          <option value="Carpintería">Carpintería</option>
+          <option value="Plomería">Plomería</option>
+          <option value="Albañilería">Albañilería</option>
+          <option value="Electricista">Electricista</option>
+          <option value="Pintura">Pintura</option>
+        </select>
+
+        <select name="delegacion" required>
+  <option value="">Selecciona una delegación</option>
+  <option value="Álvaro Obregón">Álvaro Obregón</option>
+  <option value="Azcapotzalco">Azcapotzalco</option>
+  <option value="Benito Juárez">Benito Juárez</option>
+  <option value="Coyoacán">Coyoacán</option>
+  <option value="Cuajimalpa de Morelos">Cuajimalpa de Morelos</option>
+  <option value="Cuauhtémoc">Cuauhtémoc</option>
+  <option value="Gustavo A. Madero">Gustavo A. Madero</option>
+  <option value="Iztacalco">Iztacalco</option>
+  <option value="Iztapalapa">Iztapalapa</option>
+  <option value="La Magdalena Contreras">La Magdalena Contreras</option>
+  <option value="Miguel Hidalgo">Miguel Hidalgo</option>
+  <option value="Milpa Alta">Milpa Alta</option>
+  <option value="Tláhuac">Tláhuac</option>
+  <option value="Tlalpan">Tlalpan</option>
+  <option value="Venustiano Carranza">Venustiano Carranza</option>
+  <option value="Xochimilco">Xochimilco</option>
+</select>
+
+        <input type="text" name="ciudad" placeholder="Ciudad">
+        <input type="text" name="colonia" placeholder="Colonia">
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <section id="destacados">
+      <h2>Profesionales Destacados</h2>
+      <div class="profesionales-container">
+        <div class="profesional-card">
+          <img src="img/profesional1.jpg" alt="Profesional">
+          <h3>Juan Pérez</h3>
+          <p>Carpintero - CDMX</p>
+        </div>
+
+        <div class="profesional-card">
+          <img src="img/profesional2.jpg" alt="Profesional">
+          <h3>María López</h3>
+          <p>Plomera - Puebla</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Pie de página -->
+    <p>&copy; 2025 Chamvitz. Todos los derechos reservados.</p>
+    <!-- Mensaje de copyright con el año 2025 -->
+  </footer>
+
+  <script src="/public/js/script.js"></script>
+  <!-- Archivo JavaScript externo que contiene la lógica interactiva de la página -->
+</body>
+</html>
