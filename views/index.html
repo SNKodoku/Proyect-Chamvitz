@@ -26,13 +26,8 @@
     </div>
     <ul class="nav-list" id="nav-list">
       <li><a href="index.html">Inicio</a></li>
-      <li><a href="profesionales.html">Profesionales</a></li>
       <li><a href="contacto.html">Contacto</a></li>
-      <li id="link-registrar"><a href="/views/registrar.html">Registrar</a></li>
-      <li id="link-login"><a href="/views/login.html">Iniciar Sesión</a></li>
-      <li id="link-admin" style="display: none"><a href="/views/admin.html">Admin</a></li>
-      <li id="link-logout" style="display: none"><a>Cerrar Sesión</a></li>  
-      <li id="saludo-usuario" style="display: none"><span></span></li>
+      <li><a href="registrar.html">Registrar</a></li>
     </ul>
   </nav>
 </header>
@@ -52,6 +47,7 @@
         <input type="text" name="colonia" placeholder="Colonia">
         <button type="submit">Buscar</button>
       </form>
+      <div id="lista-profesionales" class="profesionales-container"></div>
     </section>
 
     <section id="servicios">
