@@ -12,25 +12,25 @@
     <img src="/public/images/logo_cham.jpg" alt="Chamvitz Logo" class="logo">
     <h1>Registrate con nosotros.</h1>
     <nav class="navbar">
-    <div class="menu-icon" id="menu-icon" role="button" aria-label="Menú de navegación">
-      <i class="fas fa-bars"></i>
-    </div>
-    <ul class="nav-list" id="nav-list">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="profesionales.html">Profesionales</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li id="link-registrar"><a href="/views/registrar.html">Registrar</a></li>
-      <li id="link-login"><a href="/login.html">Iniciar Sesión</a></li>
-      <li id="link-admin" style="display: none"><a href="/admin.html">Admin</a></li>
-      <li id="link-logout" style="display: none"><a>Cerrar Sesión</a></li>  
-      <li id="saludo-usuario" style="display: none"><span></span></li>
-    </ul>
-  </nav>
+      <div class="menu-icon" id="menu-icon" role="button" aria-label="Menú de navegación">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-list" id="nav-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="profesionales.html">Profesionales</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li id="link-registrar"><a href="registrar.html">Registrar</a></li>
+            <li id="link-login"><a href="login.html">Iniciar Sesión</a></li>
+            <li id="link-admin" style="display: none"><a href="admin.html">Admin</a></li>
+            <li id="link-logout" style="display: none"><a>Cerrar Sesión</a></li>  
+             <li id="saludo-usuario" style="display: none"><span></span></li>
+        </ul>
+    </nav>
   </header>
+
   <main>
     <section id="registro">
       <h2>Formulario de Registro</h2>
-      
       <form id="form-registro">
         <input type="text" name="nombre" placeholder="Nombre completo" required>
 
@@ -63,7 +63,6 @@
           <option value="xochimilco">Xochimilco</option>
         </select>
 
-
         <textarea name="descripcion" placeholder="Descripción de tus servicios" required></textarea>
         <input type="text" name="contacto" placeholder="Número de contacto" required>
         <input type="url" name="foto" placeholder="URL de tu foto o logo (opcional)">
@@ -71,13 +70,15 @@
       </form>
     </section>
   </main>
+
   <footer>
-    <!-- Pie de página -->
     <p>&copy; 2025 Chamvitz. Todos los derechos reservados.</p>
-    <p>&copy; Numero de telefono de la compañia: 5547810502</p>
-    <p>&copy; Correo electronico de la compañia: 420098597@pcpuma.acatlan.uanm.mx</p>
-    <!-- Mensaje de copyright con el año 2025 -->
+    <p>Teléfono de la compañía: 5547810502</p>
+    <p>Correo electrónico: 420098597@pcpuma.acatlan.uanm.mx</p>
   </footer>
+
+  <!-- Scripts al final para asegurar que el DOM esté cargado -->
   <script src="/public/js/script.js"></script>
+  <script src="/public/js/registrar.js"></script>
 </body>
 </html>

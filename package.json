@@ -2,20 +2,30 @@
   "name": "proyecto_chamv",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SNKodoku/Proyect-Chamvitz.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SNKodoku/Proyect-Chamvitz/issues"
+  },
+  "homepage": "https://github.com/SNKodoku/Proyect-Chamvitz#readme",
   "dependencies": {
-    "body-parser": "^2.2.0",
+    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "express-session": "^1.18.1",
+    "multer": "^2.0.1",
+    "sequelize": "^6.37.7",
     "sqlite3": "^5.1.7"
   }
 }
