@@ -5,11 +5,31 @@ document.addEventListener('DOMContentLoaded', function() {
     searchForm.addEventListener('submit', function(e) {
       e.preventDefault();
       const oficio = searchForm.oficio.value;
-      const estado = searchForm.estado.value;
+      const delegacion = searchForm.delegacion.value;
       const ciudad = searchForm.ciudad.value;
       const colonia = searchForm.colonia.value;
-      const query = `oficio=${oficio}&estado=${estado}&ciudad=${ciudad}&colonia=${colonia}`;
-      window.location.href = `profesionales.html?${query}`;
+      const query = `oficio=${oficio}&estado=${delegacion}&ciudad=${ciudad}&colonia=${colonia}`;
+
+      const container = document.getElementById('lista-profesionales');
+      if (container) container.innerHTML = '';
+
+      fetch(`/api/profesionales?${query}`)
+        .then(res => res.json())
+        .then(data => {
+          if (container) {
+            data.forEach(pro => {
+              const card = document.createElement('div');
+              card.classList.add('profesional-card');
+              card.innerHTML = `
+                <h3>${pro.nombre}</h3>
+                <p><strong>Oficio:</strong> ${pro.oficio}</p>
+                <p><strong>Delegación:</strong> ${pro.estado}</p>
+                <p><strong>Contacto:</strong> ${pro.contacto}</p>
+              `;
+              container.appendChild(card);
+            });
+          }
+        });
     });
   }
 });
